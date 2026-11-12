@@ -1,8 +1,8 @@
 # Antrian Klinik WA
 
-[[Tests](https://github.com/riyanda-ex/antrian-klinik-wa/actions/workflows/tests.yml/badge.svg)](https://github.com/riyanda-ex/antrian-klinik-wa/actions/workflows/tests.yml)
-[Python](https://img.shields.io/badge/Python-3.12-blue)
-[License](https://img.shields.io/badge/License-MIT-green)
+[![Tests](https://github.com/riyanda-ex/antrian-klinik-wa/actions/workflows/tests.yml/badge.svg)](https://github.com/riyanda-ex/antrian-klinik-wa/actions/workflows/tests.yml)
+[![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/riyanda-ex/antrian-klinik-wa/blob/main/LICENSE)
 
 Pasien tidak perlu lagi menunggu 4 jam di klinik. Ambil nomor antrean dari HP, lihat estimasi tunggu, datang saat giliran hampir tiba.
 
