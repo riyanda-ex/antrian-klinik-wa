@@ -1,23 +1,25 @@
 # Antrian Klinik WA
 
-Pasien tidak perlu lagi menunggu 4 jam di klinik.
+[[Tests](https://github.com/riyanda-ex/antrian-klinik-wa/actions/workflows/tests.yml/badge.svg)](https://github.com/riyanda-ex/antrian-klinik-wa/actions/workflows/tests.yml)
+[Python](https://img.shields.io/badge/Python-3.12-blue)
+[License](https://img.shields.io/badge/License-MIT-green)
 
-### Masalah
-Pasien klinik di Indonesia harus datang pagi dan menunggu berjam-jam di ruang tunggu yang penuh, hanya karena takut kelewat antrean. Lansia dan ibu hamil paling menderita.
+Pasien tidak perlu lagi menunggu 4 jam di klinik. Ambil nomor antrean dari HP, lihat estimasi tunggu, datang saat giliran hampir tiba.
 
-### Solusi
-Sistem antrean berbasis WhatsApp. Pasien ambil nomor dari rumah, dapat estimasi jam dipanggil, dan dapat reminder WA saat gilirannya dekat. Tanpa perlu download aplikasi.
+> ⚠️ **Simulasi edukasi.** Bukan integrasi WhatsApp resmi & bukan pendaftaran resmi klinik. Jangan kirim NIK / No. BPJS.
 
-### Teknologi
-- Python
-- WhatsApp API Ready (bisa sambung ke Fonnte / Wablas)
-- Estimasi Waktu Otomatis
+## Fitur
 
-### Cara Pakai
-1. Jalankan `python main.py`
-2. Pasien daftar: nama, no WA, keluhan
-3. Sistem kirim estimasi waktu tunggu
-4. Staff klik panggil, sistem kirim WA otomatis
+- Ambil nomor antrean otomatis & urut
+- Estimasi tunggu transparan (10 menit / pasien)
+- Validasi nama, HP Indonesia, poli (whitelist)
+- Nomor HP dimasking, API tidak bocorkan nomor asli
+- Kuota 100 / hari, reset otomatis ganti hari
+- 10 test otomatis + CI GitHub Actions
 
-### Dampak
-Ruang tunggu tidak penuh, pasien bisa kerja / istirahat di rumah, klinik terlihat modern.
+## Cara Jalanin
+
+```bash
+pip install -r requirements.txt
+python main.py
+# Buka: http://127.0.0.1:5000
